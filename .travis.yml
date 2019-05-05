@@ -10,8 +10,8 @@ deploy:
   skip_cleanup: true
   github_token: $GITHUB_API_KEY  # Set in the settings page of your repository, as a secure variable
   keep_history: true
-  local-dir: $TRAVIS_BUILD_DIR
   repo: fabian-portillo/fabian-portillo.github.io
+  local-dir: $TRAVIS_BUILD_DIR
   on:
     branch: master
     
