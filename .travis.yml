@@ -2,7 +2,7 @@
 #node_js:
 #  - 0.8
 
-#script: skip 
+script: skip 
 
 language: node_js
 node_js:
@@ -19,7 +19,7 @@ branches:
 deploy:
   provider: pages
   skip-cleanup: true
-  github-token: $GITHUB_ACCESS_TOKEN  # Set in travis-ci.org dashboard, marked secure https://docs.travis-ci.com/user/deployment/pages/#Setting-the-GitHub-token
+  github-token: $GITHUB_API_KEY  # Set in travis-ci.org dashboard, marked secure https://docs.travis-ci.com/user/deployment/pages/#Setting-the-GitHub-token
   target-branch: gh-pages
   local-dir: dist
   on:
