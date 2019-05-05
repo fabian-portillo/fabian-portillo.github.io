@@ -16,10 +16,6 @@ branches:
   only:
   - master
 
-install:
-  - npm install
-  - npm run generate
-
 script:
   - echo "Skipping tests"
 
