@@ -15,10 +15,7 @@ cache:
 branches:
   only:
   - master
-
-script:
-  - echo "Skipping tests"
-
+  
 deploy:
   provider: pages
   skip-cleanup: true
