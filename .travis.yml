@@ -1,0 +1,24 @@
+#1
+language: node_js
+node_js:
+  - 8
+
+script: skip 
+
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_API_KEY  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  repo: fabian-portillo/fabian-portillo.github.io
+  local-dir: $TRAVIS_BUILD_DIR
+  on:
+    branch: master
+    
+cache:
+  directories:
+    - "node_modules"
+
+branches:
+  only:
+  - master
